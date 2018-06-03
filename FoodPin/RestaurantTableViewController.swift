@@ -160,10 +160,14 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
     }
     
     let git = "Hello Git"
+    func reverse(text: String) -> String {
+        return String(text.reversed())
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(git)
+        print(reverse(text: "stressed"))
         
         //移除返回按鈕的標題，navigationBar為現在這個class，而非Detail
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
