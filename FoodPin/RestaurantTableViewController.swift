@@ -158,9 +158,13 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
         deleteAction.backgroundColor = UIColor(red: 202/255, green: 203/255, blue: 203/255, alpha: 1.0)
         return [deleteAction,shareAction]
     }
-
+    
+    let git = "Hello Git"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(git)
+        
         //移除返回按鈕的標題，navigationBar為現在這個class，而非Detail
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         //滑動回到上一頁
